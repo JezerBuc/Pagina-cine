@@ -1,0 +1,168 @@
+body {
+    background-color: #8A2BE2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 233, 255);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 233, 255);
+}
+
+.titulo {
+    text-align: center;
+}
+
+.titulo::after {
+    content: "📽️";
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+nav {
+    text-align: right;
+    font-size: large;
+    word-spacing: 10px;
+}
+
+.navegacion-fondo {
+    background-color: #A88BBD;
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px){
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+
+
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    color: #8A2BE2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navegacion-principal a:hover { /* Cambiar Fondo cuando el mouse se coloca encima*/
+    background-color: white;
+    color: #8A2BE2;
+    
+    }
+
+    .cine-top {
+        text-align: center;
+    }
+    
+    .cine-top p {
+        text-align: justify;
+        padding: 0 200px;
+    }
+    
+    #imagenSala {
+        border-radius: 40px;
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+    
+    /*cards */
+
+    
+    .cartelera h2 {
+        text-align: center;
+    }
+    
+    .cartelera {
+        padding: 20px;
+    }
+    
+    .contenedor-fila {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .card {
+        background-color: rgb(191, 157, 223);
+        width: 230px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .card img {
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .sinopsis {
+        text-align: left;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+    
+    .precio-pelicula {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 10px 0;
+    }
+    
+    .boton-agregar {
+        background-color: rgb(191, 157, 223);
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid blueviolet;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .boton-agregar:hover {
+        background-color: blueviolet;
+        color: white;
+    }
+    
+    .derechos-reservados{
+        text-align: center;
+    }
+
+
+    @media (min-width: 768px){
+        .navegacion-principal {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+    }
+
+    @media (min-width: 768px){
+        .cartelera {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+    }
+
+    @media (min-width: 768px){
+        .cine-top {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+    }
